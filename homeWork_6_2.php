@@ -1,5 +1,5 @@
 <?php
-$time_start = microtime(true);
+//$time_start = microtime(true);
 define('STO', 100);
 $a = 1000000;
 $x=0;
@@ -12,16 +12,14 @@ for ($i=1;$i<$a;$i++) {
 
 
     }
-//    if ($x == STO){
-//        break;
-//    }
+    if ($x == STO){
+        break;
+   }
 }
-//print_r($sum);
-//    }else (strlen($x) == 100 );
-//        break;
-//    var_dump($array);
+print_r( $sum);
 
-$time_end = microtime(true);
-$execution_time = ($time_end - $time_start);
 
-echo $execution_time;
+//$time_end = microtime(true);
+//$execution_time = ($time_end - $time_start);
+//
+//echo $execution_time;
